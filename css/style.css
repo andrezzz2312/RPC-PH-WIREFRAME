@@ -292,7 +292,7 @@ a {
 	position: relative;
 	width: max-content;
 	background-color: #ff4500;
-	padding: 1vh 1.5vh;
+	padding: 1.5vh 2vh;
 	transform: scaleY(0);
 	text-align: start;
 	color: white;
