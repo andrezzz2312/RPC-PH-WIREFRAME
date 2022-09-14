@@ -398,7 +398,7 @@ if (loop.readyState >= 1) {
 
 window.addEventListener('DOMContentLoaded', function () {
 	setFontSizes()
-	if (window.matchMedia('(max-width: 420px)').matches) {
+	if (window.matchMedia('(max-width: 520px)').matches) {
 		if (window.matchMedia('(orientation: portrait)').matches) {
 			warningText.innerHTML =
 				' Use the device in landscape mode in order to properly use this website'
@@ -419,7 +419,7 @@ window.addEventListener('resize', function () {
 			ArreglarLineas()
 		}
 	}
-	if (window.matchMedia('(max-width: 420px)').matches) {
+	if (window.matchMedia('(max-width: 520px)').matches) {
 		if (window.matchMedia('(orientation: portrait)').matches) {
 			warningText.innerHTML =
 				' Use the device in landscape mode in order to properly use this website'
