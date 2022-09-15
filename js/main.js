@@ -1257,7 +1257,7 @@ viewR_button.addEventListener('click', function (e) {
 		model.classList.add('Sirv')
 		model.setAttribute(
 			'data-src',
-			'https://rotation.marketscale.com/Companies/PearsonPackaging/34758_DualFloorPositionPalletizing_RPC_DF/V2/V2.spin?zoom=5'
+			'https://rotation.marketscale.com/Companies/PearsonPackaging/34763_PalletHandlingPalletizer_RPC_PH/V2/V2.spin?zoom=5'
 		)
 
 		showCont.appendChild(model)
