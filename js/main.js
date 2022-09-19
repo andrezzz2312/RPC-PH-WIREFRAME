@@ -1082,7 +1082,7 @@ quickS_button.addEventListener('click', function (e) {
 	createContent(
 		'12%',
 		'32%',
-		'Quick Start-Up&nbsp;&nbsp;&nbsp;&nbsp;',
+		'Quick Start-Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 		'Pre-assembled cell',
 		'quickS_p',
 		'',
