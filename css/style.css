@@ -321,6 +321,7 @@ ul {
 }
 ul li {
 	margin-bottom: 1em;
+	margin-left: 0.5vw;
 }
 li:last-child {
 	margin-bottom: 0;
@@ -331,7 +332,7 @@ ul li::before {
 	font-weight: bold; /* If you want it to be bold */
 	display: inline-block; /* Needed to add space between the bullet and the text */
 	width: 0.8em; /* Also needed for space (tweak if needed) */
-	margin-left: -0.9em; /* Also needed for space (tweak if needed) */
+	margin-left: -1.2vw; /* Also needed for space (tweak if needed) */
 }
 
 .backButton {
