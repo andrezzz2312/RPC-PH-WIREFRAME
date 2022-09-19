@@ -271,7 +271,9 @@ function backButtonFunction() {
 	loop.pause()
 	video3.addEventListener('ended', () => {
 		video3.classList.add('short-vanish')
-		loop.play()
+		setTimeout(() => {
+			loop.play()
+		}, 500)
 		HideShowMainButtons()
 		setTimeout(() => {
 			loop.style.zIndex = '-1'
@@ -529,20 +531,21 @@ compactFP_button.addEventListener('click', function (e) {
 			}, 3000)
 
 			if (video1check && video2check && video3check) {
-				loader.classList.remove('show')
-				loader.classList.add('short-vanish')
-				loader.style.zIndex = '-200'
-
 				clearInterval(clearcheck)
-
-				loop.classList.add('short-vanish')
 				setTimeout(() => {
-					video1.play()
-					video1.addEventListener('ended', () => {
-						InterpolateVideo(loop, video1, video2)
-						HideShowCont()
-					})
-				}, 300)
+					loader.classList.remove('show')
+					loader.classList.add('short-vanish')
+					loader.style.zIndex = '-200'
+
+					loop.classList.add('short-vanish')
+					setTimeout(() => {
+						video1.play()
+						video1.addEventListener('ended', () => {
+							InterpolateVideo(loop, video1, video2)
+							HideShowCont()
+						})
+					}, 500)
+				}, 500)
 			}
 		}
 	}
@@ -629,20 +632,21 @@ intuitiveH_button.addEventListener('click', function (e) {
 			}, 3000)
 
 			if (video1check && video2check && video3check) {
-				loader.classList.remove('show')
-				loader.classList.add('short-vanish')
-				loader.style.zIndex = '-200'
-
 				clearInterval(clearcheck)
-
-				loop.classList.add('short-vanish')
 				setTimeout(() => {
-					video1.play()
-					video1.addEventListener('ended', () => {
-						animations()
-						InterpolateVideo(loop, video1, video2)
-						HideShowCont()
-					})
+					loader.classList.remove('show')
+					loader.classList.add('short-vanish')
+					loader.style.zIndex = '-200'
+
+					loop.classList.add('short-vanish')
+					setTimeout(() => {
+						video1.play()
+						video1.addEventListener('ended', () => {
+							animations()
+							InterpolateVideo(loop, video1, video2)
+							HideShowCont()
+						})
+					}, 500)
 				}, 500)
 			}
 		}
@@ -732,20 +736,21 @@ easyC_button.addEventListener('click', function (e) {
 			}, 3000)
 
 			if (video1check && video2check && video3check) {
-				loader.classList.remove('show')
-				loader.classList.add('short-vanish')
-				loader.style.zIndex = '-200'
-
 				clearInterval(clearcheck)
-
-				loop.classList.add('short-vanish')
 				setTimeout(() => {
-					video1.play()
-					video1.addEventListener('ended', () => {
-						animations()
-						InterpolateVideo(loop, video1, video2)
-						HideShowCont()
-					})
+					loader.classList.remove('show')
+					loader.classList.add('short-vanish')
+					loader.style.zIndex = '-200'
+
+					loop.classList.add('short-vanish')
+					setTimeout(() => {
+						video1.play()
+						video1.addEventListener('ended', () => {
+							animations()
+							InterpolateVideo(loop, video1, video2)
+							HideShowCont()
+						})
+					}, 500)
 				}, 500)
 			}
 		}
@@ -831,20 +836,21 @@ continousO_button.addEventListener('click', function (e) {
 			}, 3000)
 
 			if (video1check && video2check && video3check) {
-				loader.classList.remove('show')
-				loader.classList.add('short-vanish')
-				loader.style.zIndex = '-200'
-
 				clearInterval(clearcheck)
-
-				loop.classList.add('short-vanish')
 				setTimeout(() => {
-					video1.play()
-					video1.addEventListener('ended', () => {
-						animations()
-						InterpolateVideo(loop, video1, video2)
-						HideShowCont()
-					})
+					loader.classList.remove('show')
+					loader.classList.add('short-vanish')
+					loader.style.zIndex = '-200'
+
+					loop.classList.add('short-vanish')
+					setTimeout(() => {
+						video1.play()
+						video1.addEventListener('ended', () => {
+							animations()
+							InterpolateVideo(loop, video1, video2)
+							HideShowCont()
+						})
+					}, 500)
 				}, 500)
 			}
 		}
@@ -932,20 +938,21 @@ optionalB_button.addEventListener('click', function (e) {
 			}, 3000)
 
 			if (video1check && video2check && video3check) {
-				loader.classList.remove('show')
-				loader.classList.add('short-vanish')
-				loader.style.zIndex = '-200'
-
 				clearInterval(clearcheck)
-
-				loop.classList.add('short-vanish')
 				setTimeout(() => {
-					video1.play()
-					video1.addEventListener('ended', () => {
-						animations()
-						InterpolateVideo(loop, video1, video2)
-						HideShowCont()
-					})
+					loader.classList.remove('show')
+					loader.classList.add('short-vanish')
+					loader.style.zIndex = '-200'
+
+					loop.classList.add('short-vanish')
+					setTimeout(() => {
+						video1.play()
+						video1.addEventListener('ended', () => {
+							animations()
+							InterpolateVideo(loop, video1, video2)
+							HideShowCont()
+						})
+					}, 500)
 				}, 500)
 			}
 		}
@@ -1034,19 +1041,22 @@ maximumU_button.addEventListener('click', function (e) {
 			}, 3000)
 
 			if (video1check && video2check && video3check) {
-				loader.classList.remove('show')
-				loader.classList.add('short-vanish')
-				loader.style.zIndex = '-200'
 				clearInterval(clearcheck)
-				loop.classList.add('short-vanish')
 				setTimeout(() => {
-					video1.play()
-					video1.addEventListener('ended', () => {
-						InterpolateVideo(loop, video1, video2)
-						animations()
-						HideShowCont()
-					})
-				}, 1000)
+					loader.classList.remove('show')
+					loader.classList.add('short-vanish')
+					loader.style.zIndex = '-200'
+
+					loop.classList.add('short-vanish')
+					setTimeout(() => {
+						video1.play()
+						video1.addEventListener('ended', () => {
+							InterpolateVideo(loop, video1, video2)
+							animations()
+							HideShowCont()
+						})
+					}, 1000)
+				}, 500)
 			}
 		}
 	}
@@ -1095,16 +1105,16 @@ quickS_button.addEventListener('click', function (e) {
 
 			backButtonContainer.remove()
 			createContent(
-				'70%',
-				'19%',
-				'Quick Start-Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+				'12%',
+				'32%',
+				'Quick Start-Up&nbsp;&nbsp;&nbsp;&nbsp;',
 				'Pre-assembled cell',
 				'quickS_p',
 				'',
 				'',
 				'2vh 4vh 2vh 4vh',
 				'Common base for easy placement and start-up',
-				'Safety guarding and auxiliary conveyors must be attached'
+				'Safety guarding must be attached'
 			)
 			animations()
 			createBackButton()
@@ -1137,19 +1147,22 @@ quickS_button.addEventListener('click', function (e) {
 			}, 3000)
 
 			if (video1check && video2check && video3check) {
-				loader.classList.remove('show')
-				loader.classList.add('short-vanish')
-				loader.style.zIndex = '-200'
 				clearInterval(clearcheck)
-				loop.classList.add('short-vanish')
 				setTimeout(() => {
-					video1.play()
-					video1.addEventListener('ended', () => {
-						InterpolateVideo(loop, video1, video2)
-						animations()
-						HideShowCont()
-					})
-				}, 1000)
+					loader.classList.remove('show')
+					loader.classList.add('short-vanish')
+					loader.style.zIndex = '-200'
+
+					loop.classList.add('short-vanish')
+					setTimeout(() => {
+						video1.play()
+						video1.addEventListener('ended', () => {
+							InterpolateVideo(loop, video1, video2)
+							animations()
+							HideShowCont()
+						})
+					}, 1000)
+				}, 500)
 			}
 		}
 	}
