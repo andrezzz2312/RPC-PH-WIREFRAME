@@ -203,7 +203,7 @@ function createContent(
 
 		setTimeout(() => {
 			textContent.style.width = labelCont.offsetWidth + 'px'
-		}, 200)
+		}, 300)
 		pCont.setAttribute('id', pContentId ? pContentId : 'a')
 		list = document.createElement('ul')
 		paragraph = document.createElement('li')
