@@ -40,7 +40,7 @@ const close = document.querySelector('#close')
 const alertdiv = document.querySelector('.alertdiv')
 const modalalert = document.querySelector('.modalalert')
 const quality = document.querySelector('#quality_button')
-let isHD = false
+
 let details = navigator.userAgent
 let regexp = /android|iphone|kindle|ipad/i
 let ios = /iphone|ipad/i
@@ -49,7 +49,6 @@ let isMobileDevice = regexp.test(details)
 let isIOS = ios.test(details)
 let isMac = macosPlatforms.test(details)
 
-isHD = true
 loop.src = '/assets/loop.mp4'
 
 // Display fullscreen button
@@ -439,16 +438,6 @@ window.addEventListener('resize', function () {
 
 ////////// Event Listeners for the main buttons //////////
 
-quality_button.addEventListener('click', function (e) {
-	isHD = !isHD
-
-	if (isHD) {
-		quality.textContent = 'HD'
-	} else {
-		quality.textContent = 'SD'
-	}
-})
-
 fullscreen_button.addEventListener('click', function (e) {
 	expand.classList.toggle('disabledb')
 	contract.classList.toggle('disabledb')
@@ -466,19 +455,11 @@ fullscreen_button.addEventListener('click', function (e) {
 compactFP_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
-	if (isHD === false) {
-		createVideos(
-			'assets/compactFP/compactFP_C1.mp4',
-			'assets/compactFP/compactFP_C2.mp4',
-			'assets/compactFP/compactFP_C3.mp4'
-		)
-	} else {
-		createVideos(
-			'assets/compactFP/compactFP1.mp4',
-			'assets/compactFP/compactFP2.mp4',
-			'assets/compactFP/compactFP3.mp4'
-		)
-	}
+	createVideos(
+		'assets/compactFP/compactFP1.mp4',
+		'assets/compactFP/compactFP2.mp4',
+		'assets/compactFP/compactFP3.mp4'
+	)
 
 	createContent('11.5%', '24%', 'Compact Footprint')
 	labelCont.style.borderRadius = '0.8rem'
@@ -554,19 +535,11 @@ compactFP_button.addEventListener('click', function (e) {
 intuitiveH_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
-	if (isHD === false) {
-		createVideos(
-			'assets/intuitiveH/intuitiveH_C1.mp4',
-			'assets/intuitiveH/intuitiveH_C2.mp4',
-			'assets/intuitiveH/intuitiveH_C3.mp4'
-		)
-	} else {
-		createVideos(
-			'assets/intuitiveH/intuitiveH1.mp4',
-			'assets/intuitiveH/intuitiveH2.mp4',
-			'assets/intuitiveH/intuitiveH3.mp4'
-		)
-	}
+	createVideos(
+		'assets/intuitiveH/intuitiveH1.mp4',
+		'assets/intuitiveH/intuitiveH2.mp4',
+		'assets/intuitiveH/intuitiveH3.mp4'
+	)
 
 	createContent(
 		'63%',
@@ -656,19 +629,11 @@ intuitiveH_button.addEventListener('click', function (e) {
 easyC_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
-	if (isHD === false) {
-		createVideos(
-			'assets/easyC/easyC_C1.mp4',
-			'assets/easyC/easyC_C2.mp4',
-			'assets/easyC/easyC_C3.mp4'
-		)
-	} else {
-		createVideos(
-			'assets/easyC/easyC1.mp4',
-			'assets/easyC/easyC2.mp4',
-			'assets/easyC/easyC3.mp4'
-		)
-	}
+	createVideos(
+		'assets/easyC/easyC1.mp4',
+		'assets/easyC/easyC2.mp4',
+		'assets/easyC/easyC3.mp4'
+	)
 
 	// padding: 3vh 4vh 3vh 4vh;
 	window.addEventListener('resize', function (e) {
@@ -760,19 +725,12 @@ easyC_button.addEventListener('click', function (e) {
 continousO_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
-	if (isHD === false) {
-		createVideos(
-			'assets/continousO/continousO_C1.mp4',
-			'assets/continousO/continousO_C2.mp4',
-			'assets/continousO/continousO_C3.mp4'
-		)
-	} else {
-		createVideos(
-			'assets/continousO/continousO1.mp4',
-			'assets/continousO/continousO2.mp4',
-			'assets/continousO/continousO3.mp4'
-		)
-	}
+	createVideos(
+		'assets/continousO/continousO1.mp4',
+		'assets/continousO/continousO2.mp4',
+		'assets/continousO/continousO3.mp4'
+	)
+
 	createContent(
 		'11%',
 		'37.5%',
@@ -860,19 +818,12 @@ continousO_button.addEventListener('click', function (e) {
 optionalB_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
-	if (isHD === false) {
-		createVideos(
-			'assets/optionalB/optionalB_C1.mp4',
-			'assets/optionalB/optionalB_C2.mp4',
-			'assets/optionalB/optionalB_C3.mp4'
-		)
-	} else {
-		createVideos(
-			'assets/optionalB/optionalB1.mp4',
-			'assets/optionalB/optionalB2.mp4',
-			'assets/optionalB/optionalB3.mp4'
-		)
-	}
+	createVideos(
+		'assets/optionalB/optionalB1.mp4',
+		'assets/optionalB/optionalB2.mp4',
+		'assets/optionalB/optionalB3.mp4'
+	)
+
 	createContent(
 		'11%',
 		'35%',
@@ -961,19 +912,11 @@ optionalB_button.addEventListener('click', function (e) {
 maximumU_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
-	if (isHD === false) {
-		createVideos(
-			'assets/maximumU/maximumU_C1.mp4',
-			'assets/maximumU/maximumU_C2.mp4',
-			'assets/maximumU/maximumU_C3.mp4'
-		)
-	} else {
-		createVideos(
-			'assets/maximumU/maximumU1.mp4',
-			'assets/maximumU/maximumU2.mp4',
-			'assets/maximumU/maximumU3.mp4'
-		)
-	}
+	createVideos(
+		'assets/maximumU/maximumU1.mp4',
+		'assets/maximumU/maximumU2.mp4',
+		'assets/maximumU/maximumU3.mp4'
+	)
 
 	createContent(
 		'7%',
@@ -1065,19 +1008,11 @@ maximumU_button.addEventListener('click', function (e) {
 quickS_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
-	if (isHD === false) {
-		createVideos(
-			'assets/quickS/quickS_C1.mp4',
-			'assets/quickS/quickS_C2.mp4',
-			'assets/quickS/quickS_C3.mp4'
-		)
-	} else {
-		createVideos(
-			'assets/quickS/quickS1.mp4',
-			'assets/quickS/quickS2.mp4',
-			'assets/quickS/quickS3.mp4'
-		)
-	}
+	createVideos(
+		'assets/quickS/quickS1.mp4',
+		'assets/quickS/quickS2.mp4',
+		'assets/quickS/quickS3.mp4'
+	)
 
 	createContent(
 		'12%',
