@@ -49,8 +49,6 @@ let isMobileDevice = regexp.test(details)
 let isIOS = ios.test(details)
 let isMac = macosPlatforms.test(details)
 
-loop.src = '/assets/loop.mp4'
-
 // Display fullscreen button
 if (!isMobileDevice) {
 	fullscreen_button.style.display = 'none'
@@ -456,9 +454,9 @@ compactFP_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
 	createVideos(
-		'assets/compactFP/compactFP1.mp4',
-		'assets/compactFP/compactFP2.mp4',
-		'assets/compactFP/compactFP3.mp4'
+		'/assets/compactFP/compactFP1.mp4',
+		'/assets/compactFP/compactFP2.mp4',
+		'/assets/compactFP/compactFP3.mp4'
 	)
 
 	createContent('11.5%', '24%', 'Compact Footprint')
@@ -1009,9 +1007,9 @@ quickS_button.addEventListener('click', function (e) {
 	HideShowMainButtons()
 
 	createVideos(
-		'assets/quickS/quickS1.mp4',
-		'assets/quickS/quickS2.mp4',
-		'assets/quickS/quickS3.mp4'
+		'/assets/quickS/quickS1.mp4',
+		'/assets/quickS/quickS2.mp4',
+		'/assets/quickS/quickS3.mp4'
 	)
 
 	createContent(
